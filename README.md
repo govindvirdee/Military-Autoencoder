@@ -18,20 +18,21 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+<!--
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
+-->
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/govindvirdee/AlanTuring-Project">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
   <h3 align="center">AlanTuring-Project</h3>
@@ -53,6 +54,7 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-dataset">About The Dataset</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -78,6 +80,18 @@
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
 
 This project focuses on developing a machine learning model for anomaly detection in cyber defense data. By analyzing network traffic data, the aim is to identify unusual patterns or anomalies that could indicate potential security threats, such as intrusions or system failures. The project leverages the KDD Cup 99 dataset, a widely recognized benchmark in cybersecurity research.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## About The Dataset
+
+This project utilizes the NSL-KDD dataset, an improved version of the widely known KDD Cup 99 dataset for network intrusion detection. The NSL-KDD dataset addresses some of the inherent problems of the KDD'99 dataset, making it more suitable for evaluating intrusion detection systems.
+
+Key Features of NSL-KDD:
+* Reduced Redundancy: Unlike the KDD'99 dataset, NSL-KDD does not contain redundant records, ensuring that the models do not become biased toward more frequent records.
+* Balanced Distribution: It has a reasonable number of records, balancing the proportion between different types of attacks and normal connections.
+* Realistic Scenario Representation: The dataset includes various types of intrusions simulated in a military network environment, offering a comprehensive overview of potential network threats.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,12 +191,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Govindraj Singh Virdee - govindrajsinghv@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/govindvirdee/AlanTuring-Project](https://github.com/govindvirdee/AlanTuring-Project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
