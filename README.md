@@ -35,10 +35,10 @@
     <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
-  <h3 align="center">AlanTuring-Project</h3>
+  <h3 align="center">Military Autoencoder</h3>
 
   <p align="center">
-    Creating an AutoEncoder to identify anomalous signatures in the KDDCUP 1999 dataset 
+    Creating an AutoEncoder to identify anomalous signatures in the NSL-KDD dataset 
     <br />
     <a href="https://github.com/govindvirdee/AlanTuring-Project"><strong>Explore the docs »</strong></a>
     <br />
