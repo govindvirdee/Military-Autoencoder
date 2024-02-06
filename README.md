@@ -29,6 +29,30 @@
 
 
 <!-- PROJECT LOGO -->
+
+    .___  ___.  __   __       __  .___________.    ___      .______     ____    ____                                       
+    |   \/   | |  | |  |     |  | |           |   /   \     |   _  \    \   \  /   /                                       
+    |  \  /  | |  | |  |     |  | `---|  |----`  /  ^  \    |  |_)  |    \   \/   /                                        
+    |  |\/|  | |  | |  |     |  |     |  |      /  /_\  \   |      /      \_    _/                                         
+    |  |  |  | |  | |  `----.|  |     |  |     /  _____  \  |  |\  \----.   |  |                                           
+    |__|  |__| |__| |_______||__|     |__|    /__/     \__\ | _| `._____|   |__|                                           
+                                                                                                                           
+         ___      __    __  .___________.  ______    _______ .__   __.   ______   ______    _______   _______ .______      
+        /   \    |  |  |  | |           | /  __  \  |   ____||  \ |  |  /      | /  __  \  |       \ |   ____||   _  \     
+       /  ^  \   |  |  |  | `---|  |----`|  |  |  | |  |__   |   \|  | |  ,----'|  |  |  | |  .--.  ||  |__   |  |_)  |    
+      /  /_\  \  |  |  |  |     |  |     |  |  |  | |   __|  |  . `  | |  |     |  |  |  | |  |  |  ||   __|  |      /     
+     /  _____  \ |  `--'  |     |  |     |  `--'  | |  |____ |  |\   | |  `----.|  `--'  | |  '--'  ||  |____ |  |\  \----.
+    /__/     \__\ \______/      |__|      \______/  |_______||__| \__|  \______| \______/  |_______/ |_______|| _| `._____|
+                                                                                                                           
+    
+
+
+      _   _    _             _   _          _  _ ___ _       _  _____  ___       _      _                _   
+     | | | |__(_)_ _  __ _  | |_| |_  ___  | \| / __| |  ___| |/ /   \|   \   __| |__ _| |_ __ _ ___ ___| |_ 
+     | |_| (_-< | ' \/ _` | |  _| ' \/ -_) | .` \__ \ |_|___| ' <| |) | |) | / _` / _` |  _/ _` (_-</ -_)  _|
+      \___//__/_|_||_\__, |  \__|_||_\___| |_|\_|___/____|  |_|\_\___/|___/  \__,_\__,_|\__\__,_/__/\___|\__|
+                     |___/                                                                                   
+
 <br />
 <div align="center">
   <a href="https://github.com/govindvirdee/Military-Autoencoder">
@@ -120,7 +144,8 @@ To install prerequisities, simply do the following (ideally in a venv):
   python3.10 main.py 
   ```
 
-Simple! This will train a model and output the resulting performance metrics in 
+Simple! This will train a model and output the resulting performance metrics in reports/figures/ , and to the command line. 
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -131,6 +156,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## To-do list
 
 - [ ] .py files for EDA 
+- [ ] More thorough outputs saved to disk 
 - [ ] Hyperparameter grid search
 - [ ] T-SNE analysis 
 - [ ] PCA analysis 
