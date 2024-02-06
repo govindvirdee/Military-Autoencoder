@@ -38,12 +38,10 @@
     <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
-  <h3 align="center">Military Autoencoder</h3>
+  <h2 align="center">Military Autoencoder</h2>
 
   <p align="center">
     Creating an AutoEncoder to identify anomalous attack signatures in the NSL-KDD dataset 
-    <br />
-    <a href="https://github.com/govindvirdee/Military-Autoencoder"><strong>Explore the docs »</strong></a>
     <br />
 
   </p>
@@ -126,7 +124,6 @@ To install prerequisities, simply do the following (ideally in a venv):
 Simple! This will train a model and output the resulting performance metrics in reports/figures/ , and to the command line. 
 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,11 +141,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
-## License
+<!-- ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ -->
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 <!-- CONTACT -->
