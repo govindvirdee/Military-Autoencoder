@@ -31,16 +31,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/govindvirdee/AlanTuring-Project">
+  <a href="https://github.com/govindvirdee/Military-Autoencoder">
     <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
   <h3 align="center">Military Autoencoder</h3>
 
   <p align="center">
-    Creating an AutoEncoder to identify anomalous signatures in the NSL-KDD dataset 
+    Creating an AutoEncoder to identify anomalous attack signatures in the NSL-KDD dataset 
     <br />
-    <a href="https://github.com/govindvirdee/AlanTuring-Project"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/govindvirdee/Military-Autoencoder"><strong>Explore the docs »</strong></a>
     <br />
 
   </p>
@@ -64,7 +64,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#todo">To-do list</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -79,7 +79,7 @@
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
 
-This project focuses on developing a machine learning model for anomaly detection in cyber defense data. By analyzing network traffic data, the aim is to identify unusual patterns or anomalies that could indicate potential security threats, such as intrusions or system failures. The project leverages the KDD Cup 99 dataset, a widely recognized benchmark in cybersecurity research.
+This project focuses on developing a machine learning model for anomaly detection in cyber defense data. By analyzing network traffic data, the aim is to identify unusual patterns or anomalies that could indicate potential security threats, such as intrusions or system failures. The project leverages the NSL-KDD dataset, an improved version of the KDD Cup 99 dataset, a widely recognized benchmark in cybersecurity research.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,41 +93,21 @@ Key Features of NSL-KDD:
 * Balanced Distribution: It has a reasonable number of records, balancing the proportion between different types of attacks and normal connections.
 * Realistic Scenario Representation: The dataset includes various types of intrusions simulated in a military network environment, offering a comprehensive overview of potential network threats.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project uses the training data in the ARFF file type (converted to .csv), which does NOT contain the attack types and difficulty levels. This is available in the dataset within the .TXT files, but in the spirit of seeing how well the autoencoder can perform, I decided not to use those, at least to start with. 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+To install prerequisities, simply do the following (ideally in a venv): 
+* pip
   ```sh
-  npm install npm@latest -g
+  pip install -r requirements.txt 
   ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,48 +116,27 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+  ```python
+  python3.10 main.py 
+  ```
+
+Simple! This will train a model and output the resulting performance metrics in 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- To-do list -->
+## To-do list
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- [ ] .py files for EDA 
+- [ ] Hyperparameter grid search
+- [ ] T-SNE analysis 
+- [ ] PCA analysis 
+- [ ] Full test data report 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
@@ -187,19 +146,18 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- CONTACT -->
 ## Contact
 
 Govindraj Singh Virdee - govindrajsinghv@gmail.com
 
-Project Link: [https://github.com/govindvirdee/AlanTuring-Project](https://github.com/govindvirdee/AlanTuring-Project)
+Project Link: [https://github.com/govindvirdee/Military-Autoencoder](https://github.com/govindvirdee/Military-Autoencoder)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- ## Acknowledgments
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
@@ -212,13 +170,13 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
@@ -247,3 +205,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+ -->
