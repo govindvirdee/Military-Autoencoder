@@ -43,11 +43,11 @@
   <p align="center">
     Creating an AutoEncoder to identify anomalous attack signatures in the NSL-KDD dataset 
     <br />
+    v0.1.0 - Simple model, hyperparameters not tuned, 83% performance on validation data
+    <br />
 
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
