@@ -118,10 +118,17 @@ To install prerequisities, simply do the following (ideally in a venv):
 ## Usage
 
   ```python
-  python3.10 main.py 
+  python3.10 src/main.py 
   ```
 
 Simple! This will train a model and output the resulting performance metrics in reports/figures/ , and to the command line. 
+
+Some simple EDA can be performed using 
+
+  ```python
+  python3.10 src/data/eda.py 
+  ```
+This will produce a correlation plot and some simple visualisations in reports/figures/. 
 
 
 
@@ -131,7 +138,8 @@ Simple! This will train a model and output the resulting performance metrics in 
 <!-- To-do list -->
 ## To-do list
 
-- [ ] .py files for EDA 
+- [x] .py files for EDA 
+- [x] Implement EarlyStopping
 - [ ] More thorough outputs saved to disk 
 - [ ] Hyperparameter grid search
 - [ ] T-SNE analysis 
