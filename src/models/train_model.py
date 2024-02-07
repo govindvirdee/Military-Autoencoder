@@ -3,6 +3,7 @@ from tensorflow.keras.layers import Input, Dense
 from tensorflow.keras.layers import Dropout
 from tensorflow.keras.regularizers import l1, l2
 from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping 
 # import visualkeras 
 # from PIL import ImageFont
 
@@ -32,11 +33,15 @@ def train_model(model, train, val, learning_rate=0.01, epochs=20, batch_size=256
 
 	model.compile(optimizer=optimizer, loss='mean_squared_error')
 
+    # Initialize EarlyStopping callback
+	early_stopping = EarlyStopping(monitor='val_loss', patience=5, verbose=1, mode='min', restore_best_weights=True)
+
 	history = model.fit(train, train,
 	                epochs=epochs,
 	                batch_size=batch_size,
 	                shuffle=shuffle,
-	                validation_data=(val, val))
+	                validation_data=(val, val), 
+	                callbacks=[early_stopping])
 
 	return history 
 

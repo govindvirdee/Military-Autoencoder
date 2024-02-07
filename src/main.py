@@ -14,6 +14,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+
 import data.data_preprocessing as pp 
 import models.train_model as model 
 import models.predict_model as predict 
@@ -51,12 +52,11 @@ encoding_dim = 6  # or choose a different size for the encoding layer
 
 autoencoder = model.build_model(input_dim)
 model.print_model(autoencoder)
-model.visualise_model(autoencoder)
 
 
 # Specify a learning rate
-learning_rate = 0.01
-epochs = 20
+learning_rate = 0.001
+epochs = 100
 batch_size = 256
 shuffle = True
 
